@@ -10,7 +10,7 @@ object Parse {
   def parseString(html: Html[_]): Either[Throwable, JsoupDocument] =
     Either.catchNonFatal(JsoupDocument(Jsoup.parse(html.text)))
 
-  def getLastPageNumber(page: Html[CardSearchPage.type]): Either[Throwable, Int] =
+  def getLastPageNumber(page: Html[SetChecklist]): Either[Throwable, Int] =
     for {
       doc <- Parse.parseString(page)
       pagingControl <- (doc >> elementList("div .pagingcontrols")).lastOption
@@ -23,7 +23,7 @@ object Parse {
     } yield lastPageNumber - 1 // "- 1" because the url param is 0+ and text is 1+
 
   def getMuidsFromPage(
-      html: Html[CardSearchPage.type]
+      html: Html[SetChecklist]
   ): Either[Throwable, List[ChecklistCardInfo]] =
     parseString(html).map { doc =>
       val cards = doc >> elementList(".cardItem")
@@ -34,6 +34,14 @@ object Parse {
         ChecklistCardInfo(name, Muid(muid))
       }
     }
+
+  def buildCardDesc(
+      oracleData: Html[CardOracleData],
+      printedData: Html[CardPrintedData],
+      legalities: Html[CardLegalities],
+      foreignData: Html[CardForeignData]
+  ): Either[Throwable, CardDescription] = ???
+
 }
 
 case class ChecklistCardInfo(name: String, muid: Muid)

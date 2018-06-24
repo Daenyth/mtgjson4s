@@ -13,10 +13,12 @@ scalacOptions in (mtgjson4s, Compile, console) ~= (_.filterNot(Set("-Xfatal-warn
 
 resolvers += Resolver.sonatypeRepo("releases")
 
+val fs2Version = "0.10.5"
 val dependencies = Seq(
   "org.typelevel" %% "cats-core" % "1.0.1",
   "org.typelevel" %% "cats-effect" % "0.10.1",
-  "co.fs2" %% "fs2-core" % "0.10.5",
+  "co.fs2" %% "fs2-core" % fs2Version,
+  "co.fs2" %% "fs2-io" % fs2Version % "test",
   "net.ruippeixotog" %% "scala-scraper" % "2.1.0"
 )
 val testDependencies = Seq(

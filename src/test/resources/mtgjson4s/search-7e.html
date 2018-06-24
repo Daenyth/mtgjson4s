@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>
+	Card Search - Search: +"Seventh Edition" - Gatherer - Magic: The Gathering
+</title><link rel="shortcut icon" href="/Images/favicon.ico" /><meta name="description" content="Gatherer is the Magic Card Database. Search for the perfect addition to your deck. Browse through cards from Magic's entire history. See cards from the most recent sets and discover what players just like you are saying about them." /><meta name="keywords" content="monitor, gatherer, magic cards, magic the gathering, black lotus, magic: the gathering, wizards of the coast, wizards, trading card game, trading cards, collectible card game, tcg, ccg, magic sets, game, multiplayer, hobby" /><meta name="theme-color" content="#191919" /><meta name="msapplication-TileColor" content="#191919" /><link id="ctl00_ctl00_ctl00_mobileStylesheetsMobile" rel="stylesheet" href="/Styles/Styles_Mobile.css?time=-1076426197" media="(max-width:749px)" /><link id="ctl00_ctl00_ctl00_mobileStylesheetsDesktop" rel="stylesheet" href="/Styles/Styles_Desktop.css?time=-1076426197" media="(min-width:750px)" /><meta id="ctl00_ctl00_ctl00_mobileMeta" name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="../../Styles/fonts/opensans_regular_macroman/regular.css" type="text/css" charset="utf-8" /><link rel="stylesheet" href="../../Styles/fonts/opensans_semibold_macroman/semibold.css" type="text/css" charset="utf-8" /><link rel="stylesheet" href="../../Styles/fonts/opensans_bold_macroman/bold.css" type="text/css" charset="utf-8" /><link rel="stylesheet" href="../../Styles/fonts/Beleren/Beleren-Bold.css" type="text/css" />
+    <!-- google analytics -->
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-15020098-7");
+            pageTracker._setDomainName(".wizards.com");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//media.wizards.com/2018/images/magic/gatherer/popularsearch.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/Login.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(document).ready(function() {
+            if (typeof wotcAccountWidget !== "undefined") {
+                wotcAccountWidget.init(false, "screenname", null, OnLoggedIn, OnLoginCanceled, OnLoggedOut, null, true, true, true, true);
+            }
+        });
+    </script>
+    <form name="aspnetForm" method="post" action="Default.aspx?action=advanced&amp;output=checklist&amp;sort=cn+%2ccn+&amp;special=true&amp;set=+%5b%22Seventh+Edition%22%5d" id="aspnetForm" onclick="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU2MjI2NzI5M2RkNGWsbglaVyb0tYLnU/hrT2EE8SU=" />
+
+
+<script src="../../Scripts/Prototype.js" type="text/javascript"></script>
+<script src="../../Scripts/Utilities.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var addSearchConditionHandler = '/Handlers/AdvancedQuery.ashx';
+var CardDatabaseSettings = 'CardDatabaseSettings';
+var SelectingCardAction = 'NavigatesToCard';
+var inlineCardSearchHandler = '/Handlers/InlineCardSearch.ashx';
+var autoCompleteGroupBy = 'None';
+var imageHandler = '/Handlers/Image.ashx';
+var cardSearchPage = '/Pages/Search/Default.aspx';
+var cardDetailsPage = '/Pages/Card/Details.aspx';
+var UtilitiesHandler = '/Handlers/RPCUtilities.ashx';
+
+var enableCardSearchAutoComplete = true;
+var enableHintText = true;
+var enableCardSearchAutoCompleteIfNameUnchecked = false;
+
+
+
+function ClientIDs() {}
+ClientIDs.mobileStylesheetsMobile = 'ctl00_ctl00_ctl00_mobileStylesheetsMobile';
+ClientIDs.mobileStylesheetsDesktop = 'ctl00_ctl00_ctl00_mobileStylesheetsDesktop';
+ClientIDs.mobileMeta = 'ctl00_ctl00_ctl00_mobileMeta';
+ClientIDs.nonmobileStylesheetsDesktop = 'ctl00_ctl00_ctl00_nonmobileStylesheetsDesktop';
+ClientIDs.MainForm = 'aspnetForm';
+ClientIDs.bannerHeader = 'ctl00_ctl00_ctl00_bannerHeader';
+ClientIDs.altHead = 'ctl00_ctl00_ctl00_altHead';
+ClientIDs.gobacktohome = 'ctl00_ctl00_ctl00_gobacktohome';
+ClientIDs.SearchControls = 'ctl00_ctl00_ctl00_SearchControls';
+ClientIDs.SearchBoxContainer = 'ctl00_ctl00_ctl00_SearchControls_SearchBoxContainer';
+ClientIDs.CardSearchBoxParent = 'ctl00_ctl00_ctl00_SearchControls_CardSearchBoxParent';
+ClientIDs.HeaderCardSearchBox = 'ctl00_ctl00_ctl00_SearchControls_CardSearchBoxParent_HeaderCardSearchBox';
+ClientIDs.headerSearchSubmitButton = 'ctl00_ctl00_ctl00_SearchControls_headerSearchSubmitButton';
+ClientIDs.HeaderSearchBoxResults = 'ctl00_ctl00_ctl00_SearchControls_HeaderSearchBoxResults';
+ClientIDs.HeaderSearchBoxResultsContent = 'ctl00_ctl00_ctl00_SearchControls_HeaderSearchBoxResultsContent';
+ClientIDs.HeaderAllResultsLink = 'ctl00_ctl00_ctl00_SearchControls_HeaderAllResultsLink';
+ClientIDs.Simple = 'ctl00_ctl00_ctl00_Simple';
+ClientIDs.Advanced = 'ctl00_ctl00_ctl00_Advanced';
+ClientIDs.Random = 'ctl00_ctl00_ctl00_Random';
+ClientIDs.MainContainer = 'ctl00_ctl00_ctl00_MainContainer';
+ClientIDs.gathererIntroText = 'ctl00_ctl00_ctl00_gathererIntroText';
+ClientIDs.MainContent = 'ctl00_ctl00_ctl00_MainContent';
+ClientIDs.NavigationLinks = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks';
+ClientIDs.NavigationAnchorsContainer = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks_NavigationAnchorsContainer';
+ClientIDs.Settings = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks_Settings';
+ClientIDs.Language = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks_Language';
+ClientIDs.Help = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks_Help';
+ClientIDs.Configuration = 'ctl00_ctl00_ctl00_MainContent_NavigationLinks_Configuration';
+ClientIDs.SubContent = 'ctl00_ctl00_ctl00_MainContent_SubContent';
+ClientIDs.SubContentHeader = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader';
+ClientIDs.Literal1 = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader_Literal1';
+ClientIDs.searchTermDisplay = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader_searchTermDisplay';
+ClientIDs.SubContentAnchors = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContentAnchors';
+ClientIDs.topPagingControlsContainer = 'ctl00_ctl00_ctl00_MainContent_SubContent_topPagingControlsContainer';
+ClientIDs.previousSearch = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch';
+ClientIDs.prevSearchContainer = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_prevSearchContainer';
+ClientIDs.encodedSerializedParameters = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_encodedSerializedParameters';
+ClientIDs.filterSubmit = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_filterSubmit';
+ClientIDs.ajaxIndicatorImage = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_ajaxIndicatorImage';
+ClientIDs.Label2 = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_Label2';
+ClientIDs.extraBreaks = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_extraBreaks';
+ClientIDs.Label1 = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_Label1';
+ClientIDs.searchResultsContainer = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_searchResultsContainer';
+ClientIDs.sortDisplay = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sortDisplay';
+ClientIDs.searchControls = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_searchControls';
+ClientIDs.sorter = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter';
+ClientIDs.currentSort = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_currentSort';
+ClientIDs.Literal2 = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_Literal2';
+ClientIDs.sortBy = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_sortBy';
+ClientIDs.sortOrder = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_sortOrder';
+ClientIDs.addSort = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_addSort';
+ClientIDs.loadPreviousLink = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_loadPreviousLink';
+ClientIDs.switcher = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_switcher';
+ClientIDs.Nicknames = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_Nicknames';
+ClientIDs.Nickname = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_Nickname';
+ClientIDs.listRepeater = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_listRepeater';
+ClientIDs.cardRecord = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_listRepeater_ctl00_cardRecord';
+ClientIDs.DidYouMean = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMean';
+ClientIDs.DidYouMeanText = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMeanText';
+ClientIDs.DidYouMeanCandidates = 'ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMeanCandidates';
+ClientIDs.bottomPagingControlsContainer = 'ctl00_ctl00_ctl00_MainContent_SubContent_bottomPagingControlsContainer';
+ClientIDs.RightBannerAdvertisement = 'ctl00_ctl00_ctl00_RightBannerAdvertisement';
+ClientIDs.backgroundBottom = 'ctl00_ctl00_ctl00_backgroundBottom';
+ClientIDs.frontPageMessages = 'ctl00_ctl00_ctl00_frontPageMessages';
+ClientIDs.footer = 'ctl00_ctl00_ctl00_footer';
+ClientIDs.A5 = 'ctl00_ctl00_ctl00_A5';
+ClientIDs.A6 = 'ctl00_ctl00_ctl00_A6';
+ClientIDs.A7 = 'ctl00_ctl00_ctl00_A7';
+ClientIDs.A1 = 'ctl00_ctl00_ctl00_A1';
+ClientIDs.A2 = 'ctl00_ctl00_ctl00_A2';
+ClientIDs.A4 = 'ctl00_ctl00_ctl00_A4';
+ClientIDs.Label4 = 'ctl00_ctl00_ctl00_Label4';
+ClientIDs.A3 = 'ctl00_ctl00_ctl00_A3';
+ClientIDs.Label3 = 'ctl00_ctl00_ctl00_Label3';
+ClientIDs.loginSeparator = 'ctl00_ctl00_ctl00_loginSeparator';
+ClientIDs.loginLinkPlaceholder = 'ctl00_ctl00_ctl00_loginLinkPlaceholder';
+ClientIDs.CopyrightYear = 'ctl00_ctl00_ctl00_CopyrightYear';
+var textBoxHash = new Hash( { ctl00_ctl00_ctl00_SearchControls_CardSearchBoxParent_HeaderCardSearchBox: 'Search Terms...' } );//]]>
+</script>
+
+<script src="../../Scripts/Constants.js" type="text/javascript"></script>
+<script src="../../Scripts/CardDatabase.js" type="text/javascript"></script>
+<script src="../../Scripts/AdvancedSearch.js" type="text/javascript"></script>
+<script src="../../Scripts/SearchControls.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B1BC6BD4" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCwKbl6e8CALqm/3ZBgLR3aZUAu3S+MYMAp6/k60OAtqnqaUNAv+705EBAs+bwb8JAuS2+cEDAsSqtL8GAunAieQH2EiIEm4M0fdvuMsuMS6xmQWScwA=" />
+    <div style="width: 100%; height: 1px;">
+    </div>
+    
+    <div id="ctl00_ctl00_ctl00_altHead" class="altHead">
+        <div class="backgroundTop">
+                    
+        </div>
+        <div class="headerSearch">
+            <a href="https://magic.wizards.com" class="headerLogoContainer"> <img class="MagicLogoNew" src="//media.wizards.com/2018/images/magic/gatherer/magic_logo.png" /></a>
+            <div class="headerRightOfLogo">
+                <div class="headerSearchTitle"><a href="../Default.aspx" id="ctl00_ctl00_ctl00_gobacktohome"> GATHERER</a></div>     
+                
+<div class="searchcontrolsNew">
+    <div id="ctl00_ctl00_ctl00_SearchControls_SearchBoxContainer" class="searchboxcontainertop">
+        
+
+<div class="textboxnew" id="ctl00_ctl00_ctl00_SearchControls_CardSearchBoxParent" style=""><input name="ctl00$ctl00$ctl00$SearchControls$CardSearchBoxParent$HeaderCardSearchBox" type="text" id="ctl00_ctl00_ctl00_SearchControls_CardSearchBoxParent_HeaderCardSearchBox" class="textboxinputnew" onblur="SetCurrentControlBlur(event)" onfocus="SetCurrentControlFocus(event, this);" autocomplete="off" maxlength="50" /></div>
+        <div class="searchsubmit">
+            <input type="submit" name="ctl00$ctl00$ctl00$SearchControls$headerSearchSubmitButton" value="SEARCH" id="ctl00_ctl00_ctl00_SearchControls_headerSearchSubmitButton" class="searchbutton" />
+        </div>
+    </div>
+    <!-- Autocomplete Results -->
+    <div id="ctl00_ctl00_ctl00_SearchControls_HeaderSearchBoxResults" class="searchresultscontainertop">
+        <div class="smallGreyBorder">
+
+            <div class="simpleRoundedBoxTitleGrey">
+                Results
+            </div>
+            <div id="ctl00_ctl00_ctl00_SearchControls_HeaderSearchBoxResultsContent" style="background-color: #b7b7b7; padding-bottom: 1px">
+            </div>
+            <div class="simpleRoundedBoxFooterGrey">
+                <span><a href="javascript:void(0);" id="ctl00_ctl00_ctl00_SearchControls_HeaderAllResultsLink" class="autoCompleteAllResults">
+                    <span>All Results</span></a></span></div>
+            <b class="cc"><b></b></b>
+        </div>
+    </div>
+    <!-- /Autocomplete Results -->
+   
+</div>
+
+                <div class="headerSearchLinks">
+                    <div>
+                        <a href="../Default.aspx" id="ctl00_ctl00_ctl00_Simple">SIMPLE SEARCH</a>
+                    </div> |
+                    <div>
+                        <a href="../Advanced.aspx" id="ctl00_ctl00_ctl00_Advanced"> ADVANCED SEARCH</a>
+                    </div> |
+                    <div>
+                        <a href="../Card/Details.aspx?action=random" id="ctl00_ctl00_ctl00_Random"> RANDOM CARD</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ctl00_ctl00_ctl00_MainContainer" class="mainContainer">
+        <div id="Main" >
+            <div class="gathererContent">
+                
+                
+    <div id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_NavigationAnchorsContainer" class="searchcontrollinks">
+    <a href="../Default.aspx" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Simple" class="current">SIMPLE</a>
+    <a href="../Advanced.aspx" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Advanced">ADVANCED</a>
+    <a href="../Card/Details.aspx?action=random" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Random">Random Card</a>
+    <a href="../Settings.aspx" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Settings">Settings</a>
+    <a href="../Language.aspx" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Language">Language</a>
+    <a href="../Help.aspx" id="ctl00_ctl00_ctl00_MainContent_NavigationLinks_Help">Help</a>
+    
+</div>
+
+    
+   
+    
+    
+     
+   
+                               
+    <div class="contentcontainer">
+        
+        
+  
+      
+        <div class="smallGreyBorder">
+            
+          
+
+            <b class="dt"><b></b></b>
+            <div class="simpleRoundedBoxTitleGreyTall">
+           
+           
+                 <div class="contentTitle">      
+                    
+SEARCH:<p class="termdisplay">  <span id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader_searchTermDisplay" style="font-size:0.9181636em;"><i>+"Seventh Edition"</i>  (335)</span> </p>
+
+
+
+
+                    
+                   
+                               
+                </div>
+                
+                
+               <div class="pagingcontrols">
+                    <div id="ctl00_ctl00_ctl00_MainContent_SubContent_topPagingControlsContainer" class="paging">
+                    <a href="/Pages/Search/Default.aspx?page=0&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]" style="text-decoration:underline;">1</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=1&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">2</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=2&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">3</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=3&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">4</a><a href="/Pages/Search/Default.aspx?page=1&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">&nbsp;&gt;</a></div>
+                </div> 
+               
+            </div>
+            
+    <div id="separator">  </div> 
+    
+
+ 
+<div class="filterList">
+     
+<div id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_prevSearchContainer" class="smallGreyBorderBottom">
+    <a class="collapsedNode" href="javascript:void(0);" onclick="SaveVisibleArea(event, this, 'filterControls', 'filterControls', false); return ToggleFilterOptions(event, this);">
+    <b><span>Search Criteria</span></b>
+    </a>
+    
+  
+    <div id="filterControls">
+        <input name="ctl00$ctl00$ctl00$MainContent$SubContent$SubContent$previousSearch$encodedSerializedParameters" type="hidden" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_encodedSerializedParameters" value="cwBlAHQAPQArAFsAIgBTAGUAdgBlAG4AdABoACAARQBkAGkAdABpAG8AbgAiAF0A" />
+        
+        <div id="ajaxIndicator" class="indicator">
+            <img id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_ajaxIndicatorImage" src="../../Images/ajax_indicator.gif" alt="Updating..." border="0" />
+            <span id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_Label2" class="filters">Updating search parameters...</span>
+        </div>
+        
+        <div id="displayFilters" class="filters" ><span id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_previousSearch_Label1" style="display: none;">None yet.</span></div>
+    </div>
+    <script type="text/javascript">RetrieveCurrentSearchConditions();</script>
+</div>
+</div>
+    <div id="separator2">  </div>
+    <div id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_searchResultsContainer">
+
+<div class="cardList">
+    <!-- Options Container -->
+    <div class="smallGreyBorderBottom">
+        &nbsp;<a class="expandedNode" onclick="SaveVisibleArea(event, this, 'searchControls', 'searchControls', false); return ToggleSearchOptions(event, this);"
+            href="javascript:void(0);"><b>Search Result Options</b></a>
+        
+        <div id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_searchControls" class="controls" style="display:block;">
+            
+
+<div class="sorter">
+    <span class="sortField"> <span><a class="remove" href="/Pages/Search/Default.aspx?action=advanced&amp;output=checklist&amp;sort=cn%20,cn+&amp;special=true&amp;set=+[%22Seventh%20Edition%22]&amp;removesortkey=cn" style="margin-left:-2px; margin-top:4px;"> </a> &nbsp;&nbsp;&nbsp;</span> Card Number (asc)&nbsp; &nbsp;> &nbsp; &nbsp;</span>   <span class="sortField"> <span><a class="remove" href="/Pages/Search/Default.aspx?action=advanced&amp;output=checklist&amp;sort=cn%20,cn+&amp;special=true&amp;set=+[%22Seventh%20Edition%22]&amp;removesortkey=abc" style="margin-left:-2px; margin-top:4px;"> </a> &nbsp;&nbsp;&nbsp;</span> Name (asc)&nbsp; &nbsp;> &nbsp; &nbsp;</span>   <span class="sortField"> <span><a class="remove" href="/Pages/Search/Default.aspx?action=advanced&amp;output=checklist&amp;sort=cn%20,cn+&amp;special=true&amp;set=+[%22Seventh%20Edition%22]&amp;removesortkey=special" style="margin-left:-2px; margin-top:4px;"> </a> &nbsp;&nbsp;&nbsp;</span> special (asc)&nbsp; &nbsp;> &nbsp; &nbsp;</span>
+    <ul class="opts">
+        <li>
+           <div id="addpos"> Additional Sort: </div>
+            
+            <div class="SearchDrop_list"> <select name="ctl00$ctl00$ctl00$MainContent$SubContent$SubContent$ctl00$sorter$sortBy" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_sortBy">
+	<option value="cn">Collector's Number</option>
+	<option value="color">Color</option>
+	<option value="mana">Color Weight</option>
+	<option value="rating">Community Rating</option>
+	<option value="cmc">Converted Mana Cost</option>
+	<option value="abc">Name</option>
+	<option value="p">Power</option>
+	<option value="rarity">Rarity</option>
+	<option value="t">Toughness</option>
+</select> </div>
+
+        <div class="AscDrop_list">    <select name="ctl00$ctl00$ctl00$MainContent$SubContent$SubContent$ctl00$sorter$sortOrder" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_sortOrder">
+	<option value="asc">Ascending</option>
+	<option value="desc">Descending</option>
+</select> </div>
+            <div id="filterAdd"> <input type="submit" name="ctl00$ctl00$ctl00$MainContent$SubContent$SubContent$ctl00$sorter$addSort" value="ADD" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_addSort" /></div> 
+        </li>
+    </ul>
+    <br />
+    
+    <div id="separator3">  </div> 
+     
+   <div class ="refineSearchArrow"></div> <div class="refineSearch">  <a href="/Pages/Advanced.aspx?action=advanced&set=+[&quot;Seventh Edition&quot;]&sort=cn ,cn &output=checklist&special=true" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_sorter_loadPreviousLink" class="refineSearchLink">Refine Search</a></div>
+</div>
+            
+
+<div id="display">Display: </div><div class="DisplayDrop_list"> <select name="ctl00$ctl00$ctl00$MainContent$SubContent$SubContent$ctl00$switcher$switcher" id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ctl00_switcher_switcher" class="switcher">
+	<option value="standard">Standard</option>
+	<option value="compact">Compact</option>
+	<option selected="selected" value="checklist">Checklist</option>
+	<option value="visualspoiler">Visual Spoiler</option>
+
+</select> </div>
+
+        </div>
+        <div class="clear">
+        </div>
+        <b class="bb"><b></b></b>
+    </div>
+    <!-- End Options Container -->
+    
+    <table cellspacing="0" cellpadding="2" class="checklist">
+        <tr class="headerRow">
+            <td class="headerCell">#</td>
+            <td class="headerCell">Name</td>
+            <td class="headerCell">Artist</td>
+            <td class="headerCell">Color</td>
+            <td class="headerCell">Rarity</td>
+            <td class="headerCell">Set</td>
+        </tr>
+        
+                <tr class="cardItem"><td class="number">1</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25546" onclick="return CardLinkAction(event, this, 'SameWindow');">Angelic Page</a></td><td class="artist">Marc Fishman</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">2</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13016" onclick="return CardLinkAction(event, this, 'SameWindow');">Ardent Militia</a></td><td class="artist">Paolo Parente</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">3</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13153" onclick="return CardLinkAction(event, this, 'SameWindow');">Blessed Reversal</a></td><td class="artist">Christopher Moeller</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">4</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13112" onclick="return CardLinkAction(event, this, 'SameWindow');">Breath of Life</a></td><td class="artist">Roger Raupp</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">5</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11195" onclick="return CardLinkAction(event, this, 'SameWindow');">Castle</a></td><td class="artist">Edward P. Beard, Jr.</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">6</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11200" onclick="return CardLinkAction(event, this, 'SameWindow');">Circle of Protection: Black</a></td><td class="artist">Mark Romanoski</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">7</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11201" onclick="return CardLinkAction(event, this, 'SameWindow');">Circle of Protection: Blue</a></td><td class="artist">Greg & Tim Hildebrandt</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">8</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11202" onclick="return CardLinkAction(event, this, 'SameWindow');">Circle of Protection: Green</a></td><td class="artist">Alan Pollack</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">9</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11203" onclick="return CardLinkAction(event, this, 'SameWindow');">Circle of Protection: Red</a></td><td class="artist">Gary Ruddell</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">10</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11204" onclick="return CardLinkAction(event, this, 'SameWindow');">Circle of Protection: White</a></td><td class="artist">Darrell Riche</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">11</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15778" onclick="return CardLinkAction(event, this, 'SameWindow');">Cloudchaser Eagle</a></td><td class="artist">Aaron Boyd</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">12</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=26841" onclick="return CardLinkAction(event, this, 'SameWindow');">Crossbow Infantry</a></td><td class="artist">James Bernardin</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">13</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11238" onclick="return CardLinkAction(event, this, 'SameWindow');">Disenchant</a></td><td class="artist">Andrew Goldhawk</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">14</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15780" onclick="return CardLinkAction(event, this, 'SameWindow');">Eager Cadet</a></td><td class="artist">Greg & Tim Hildebrandt</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">15</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13129" onclick="return CardLinkAction(event, this, 'SameWindow');">Elite Archers</a></td><td class="artist">Dan Frazier</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">16</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13168" onclick="return CardLinkAction(event, this, 'SameWindow');">Gerrard's Wisdom</a></td><td class="artist">Donato Giancola</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">17</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=26843" onclick="return CardLinkAction(event, this, 'SameWindow');">Glorious Anthem</a></td><td class="artist">Terese Nielsen</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">18</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25545" onclick="return CardLinkAction(event, this, 'SameWindow');">Healing Salve</a></td><td class="artist">Greg & Tim Hildebrandt</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">19</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13017" onclick="return CardLinkAction(event, this, 'SameWindow');">Heavy Ballista</a></td><td class="artist">Brian Snoddy</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">20</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15779" onclick="return CardLinkAction(event, this, 'SameWindow');">Holy Strength</a></td><td class="artist">Scott M. Fischer</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">21</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13082" onclick="return CardLinkAction(event, this, 'SameWindow');">Honor Guard</a></td><td class="artist">Mark Zug</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">22</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13117" onclick="return CardLinkAction(event, this, 'SameWindow');">Intrepid Hero</a></td><td class="artist">Mike Ploog</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">23</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25556" onclick="return CardLinkAction(event, this, 'SameWindow');">Kjeldoran Royal Guard</a></td><td class="artist">Carl Critchlow</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">24</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13099" onclick="return CardLinkAction(event, this, 'SameWindow');">Knight Errant</a></td><td class="artist">Matthew D. Wilson</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">25</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13171" onclick="return CardLinkAction(event, this, 'SameWindow');">Knighthood</a></td><td class="artist">Greg & Tim Hildebrandt</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">26</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25549" onclick="return CardLinkAction(event, this, 'SameWindow');">Longbow Archer</a></td><td class="artist">Ray Lago</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">27</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15790" onclick="return CardLinkAction(event, this, 'SameWindow');">Master Healer</a></td><td class="artist">Greg & Tim Hildebrandt</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">28</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13166" onclick="return CardLinkAction(event, this, 'SameWindow');">Northern Paladin</a></td><td class="artist">Carl Critchlow</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">29</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=12978" onclick="return CardLinkAction(event, this, 'SameWindow');">Pacifism</a></td><td class="artist">Eric Peterson</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">30</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11155" onclick="return CardLinkAction(event, this, 'SameWindow');">Pariah</a></td><td class="artist">Scott M. Fischer</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">31</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25554" onclick="return CardLinkAction(event, this, 'SameWindow');">Purify</a></td><td class="artist">Doug Chaffee</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">32</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=12977" onclick="return CardLinkAction(event, this, 'SameWindow');">Razorfoot Griffin</a></td><td class="artist">Pete Venters</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">33</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15782" onclick="return CardLinkAction(event, this, 'SameWindow');">Reprisal</a></td><td class="artist">Ciruelo</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">34</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15799" onclick="return CardLinkAction(event, this, 'SameWindow');">Reverse Damage</a></td><td class="artist">Eric Peterson</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">35</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25552" onclick="return CardLinkAction(event, this, 'SameWindow');">Rolling Stones</a></td><td class="artist">Don Hazeltine</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">36</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25551" onclick="return CardLinkAction(event, this, 'SameWindow');">Sacred Ground</a></td><td class="artist">Gary Ruddell</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">37</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=30168" onclick="return CardLinkAction(event, this, 'SameWindow');">Sacred Nectar</a></td><td class="artist">Dana Knutson</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">38</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11478" onclick="return CardLinkAction(event, this, 'SameWindow');">Samite Healer</a></td><td class="artist">Anson Maddocks</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">39</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=26842" onclick="return CardLinkAction(event, this, 'SameWindow');">Sanctimony</a></td><td class="artist">Patrick Faricy</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">40</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13130" onclick="return CardLinkAction(event, this, 'SameWindow');">Seasoned Marshal</a></td><td class="artist">Edward P. Beard, Jr.</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">41</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13162" onclick="return CardLinkAction(event, this, 'SameWindow');">Serra Advocate</a></td><td class="artist">Matthew D. Wilson</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">42</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25555" onclick="return CardLinkAction(event, this, 'SameWindow');">Serra Angel</a></td><td class="artist">Mark Zug</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">43</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25658" onclick="return CardLinkAction(event, this, 'SameWindow');">Serra's Embrace</a></td><td class="artist">Ciruelo</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">44</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11499" onclick="return CardLinkAction(event, this, 'SameWindow');">Shield Wall</a></td><td class="artist">Adam Rex</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">45</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15781" onclick="return CardLinkAction(event, this, 'SameWindow');">Skyshroud Falcon</a></td><td class="artist">Anson Maddocks</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">46</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13018" onclick="return CardLinkAction(event, this, 'SameWindow');">Southern Paladin</a></td><td class="artist">Greg Staples</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">47</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25547" onclick="return CardLinkAction(event, this, 'SameWindow');">Spirit Link</a></td><td class="artist">Daren Bader</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">48</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13139" onclick="return CardLinkAction(event, this, 'SameWindow');">Standing Troops</a></td><td class="artist">Gary Ruddell</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">49</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13065" onclick="return CardLinkAction(event, this, 'SameWindow');">Starlight</a></td><td class="artist">Brian Despain</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">50</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13068" onclick="return CardLinkAction(event, this, 'SameWindow');">Staunch Defenders</a></td><td class="artist">Tristan Elwell</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">51</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=12979" onclick="return CardLinkAction(event, this, 'SameWindow');">Sunweb</a></td><td class="artist">Greg Staples</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">52</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25550" onclick="return CardLinkAction(event, this, 'SameWindow');">Sustainer of the Realm</a></td><td class="artist">Mark Zug</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">53</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13167" onclick="return CardLinkAction(event, this, 'SameWindow');">Venerable Monk</a></td><td class="artist">Mark Brill</td><td class="color">White</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">54</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=14462" onclick="return CardLinkAction(event, this, 'SameWindow');">Vengeance</a></td><td class="artist">Paolo Parente</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">55</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11566" onclick="return CardLinkAction(event, this, 'SameWindow');">Wall of Swords</a></td><td class="artist">Hannibal King</td><td class="color">White</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">56</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25553" onclick="return CardLinkAction(event, this, 'SameWindow');">Worship</a></td><td class="artist">rk post</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">57</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11581" onclick="return CardLinkAction(event, this, 'SameWindow');">Wrath of God</a></td><td class="artist">Kev Walker</td><td class="color">White</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">58</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15802" onclick="return CardLinkAction(event, this, 'SameWindow');">Air Elemental</a></td><td class="artist">Wayne England</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">59</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=27115" onclick="return CardLinkAction(event, this, 'SameWindow');">Ancestral Memories</a></td><td class="artist">Rebecca Guay</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">60</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25562" onclick="return CardLinkAction(event, this, 'SameWindow');">Arcane Laboratory</a></td><td class="artist">Brian Snoddy</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">61</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13157" onclick="return CardLinkAction(event, this, 'SameWindow');">Archivist</a></td><td class="artist">Donato Giancola</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">62</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13124" onclick="return CardLinkAction(event, this, 'SameWindow');">Baleful Stare</a></td><td class="artist">Eric Peterson</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">63</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13030" onclick="return CardLinkAction(event, this, 'SameWindow');">Benthic Behemoth</a></td><td class="artist">Heather Hudson</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">64</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11182" onclick="return CardLinkAction(event, this, 'SameWindow');">Boomerang</a></td><td class="artist">Rebecca Guay</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">65</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13165" onclick="return CardLinkAction(event, this, 'SameWindow');">Confiscate</a></td><td class="artist">Christopher Moeller</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">66</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=26844" onclick="return CardLinkAction(event, this, 'SameWindow');">Coral Merfolk</a></td><td class="artist">Rebecca Guay</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">67</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11214" onclick="return CardLinkAction(event, this, 'SameWindow');">Counterspell</a></td><td class="artist">Mark Romanoski</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">68</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=12960" onclick="return CardLinkAction(event, this, 'SameWindow');">Daring Apprentice</a></td><td class="artist">Orizio Daniele</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">69</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11232" onclick="return CardLinkAction(event, this, 'SameWindow');">Deflection</a></td><td class="artist">Jeff Easley</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">70</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13152" onclick="return CardLinkAction(event, this, 'SameWindow');">Delusions of Mediocrity</a></td><td class="artist">Terese Nielsen</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">71</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25568" onclick="return CardLinkAction(event, this, 'SameWindow');">Equilibrium</a></td><td class="artist">Don Hazeltine</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">72</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13075" onclick="return CardLinkAction(event, this, 'SameWindow');">Evacuation</a></td><td class="artist">Darrell Riche</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">73</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13031" onclick="return CardLinkAction(event, this, 'SameWindow');">Fighting Drake</a></td><td class="artist">Matt Cavotta</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">74</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13156" onclick="return CardLinkAction(event, this, 'SameWindow');">Fleeting Image</a></td><td class="artist">Dave Dorman</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">75</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11280" onclick="return CardLinkAction(event, this, 'SameWindow');">Flight</a></td><td class="artist">Bradley Williams</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">76</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11285" onclick="return CardLinkAction(event, this, 'SameWindow');">Force Spike</a></td><td class="artist">Nelson DeCastro</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">77</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=30170" onclick="return CardLinkAction(event, this, 'SameWindow');">Giant Octopus</a></td><td class="artist">Heather Hudson</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">78</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11304" onclick="return CardLinkAction(event, this, 'SameWindow');">Glacial Wall</a></td><td class="artist">Heather Hudson</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">79</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13116" onclick="return CardLinkAction(event, this, 'SameWindow');">Hibernation</a></td><td class="artist">Matt Cavotta</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">80</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13080" onclick="return CardLinkAction(event, this, 'SameWindow');">Horned Turtle</a></td><td class="artist">Edward P. Beard, Jr.</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">81</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13169" onclick="return CardLinkAction(event, this, 'SameWindow');">Inspiration</a></td><td class="artist">Matt Cavotta</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">82</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13155" onclick="return CardLinkAction(event, this, 'SameWindow');">Levitation</a></td><td class="artist">John Matson</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">83</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11387" onclick="return CardLinkAction(event, this, 'SameWindow');">Lord of Atlantis</a></td><td class="artist">Greg Staples</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">84</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25566" onclick="return CardLinkAction(event, this, 'SameWindow');">Mahamoti Djinn</a></td><td class="artist">Eric Peterson</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">85</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25563" onclick="return CardLinkAction(event, this, 'SameWindow');">Mana Breach</a></td><td class="artist">Gary Ruddell</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">86</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25567" onclick="return CardLinkAction(event, this, 'SameWindow');">Mana Short</a></td><td class="artist">Greg Staples</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">87</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13035" onclick="return CardLinkAction(event, this, 'SameWindow');">Mawcor</a></td><td class="artist">Kev Walker</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">88</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=27080" onclick="return CardLinkAction(event, this, 'SameWindow');">Memory Lapse</a></td><td class="artist">Tristan Elwell</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">89</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13140" onclick="return CardLinkAction(event, this, 'SameWindow');">Merfolk Looter</a></td><td class="artist">Tristan Elwell</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">90</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=10810" onclick="return CardLinkAction(event, this, 'SameWindow');">Merfolk of the Pearl Trident</a></td><td class="artist">Ray Lago</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">91</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25564" onclick="return CardLinkAction(event, this, 'SameWindow');">Opportunity</a></td><td class="artist">Patrick Faricy</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">92</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15796" onclick="return CardLinkAction(event, this, 'SameWindow');">Opposition</a></td><td class="artist">Mark Brill</td><td class="color">Blue</td><td class="rarity">R</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">93</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=12997" onclick="return CardLinkAction(event, this, 'SameWindow');">Phantom Warrior</a></td><td class="artist">Greg Staples</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">94</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11458" onclick="return CardLinkAction(event, this, 'SameWindow');">Prodigal Sorcerer</a></td><td class="artist">Tony Szczudlo</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">95</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=11470" onclick="return CardLinkAction(event, this, 'SameWindow');">Remove Soul</a></td><td class="artist">Adam Rex</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">96</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15794" onclick="return CardLinkAction(event, this, 'SameWindow');">Sage Owl</a></td><td class="artist">Mark Brill</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">97</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13036" onclick="return CardLinkAction(event, this, 'SameWindow');">Sea Monster</a></td><td class="artist">John Howe</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">98</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=25557" onclick="return CardLinkAction(event, this, 'SameWindow');">Sleight of Hand</a></td><td class="artist">Christopher Moeller</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">99</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=15801" onclick="return CardLinkAction(event, this, 'SameWindow');">Steal Artifact</a></td><td class="artist">Peter Bollinger</td><td class="color">Blue</td><td class="rarity">U</td><td class="set">Seventh Edition</td></tr>
+            
+                <tr class="cardItem"><td class="number">100</td><td class="name"><a class="nameLink" href="../Card/Details.aspx?multiverseid=13172" onclick="return CardLinkAction(event, this, 'SameWindow');">Storm Crow</a></td><td class="artist">John Matson</td><td class="color">Blue</td><td class="rarity">C</td><td class="set">Seventh Edition</td></tr>
+            
+    </table>
+</div>
+</div>
+    
+    
+
+            <div class="clear"></div>
+            <div id="ctl00_ctl00_ctl00_MainContent_SubContent_bottomPagingControlsContainer" class="paging bottom">
+           
+               <div class="pagingcontrols"><a href="/Pages/Search/Default.aspx?page=0&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]" style="text-decoration:underline;">1</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=1&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">2</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=2&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">3</a><span>,&nbsp;</span><a href="/Pages/Search/Default.aspx?page=3&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">4</a><a href="/Pages/Search/Default.aspx?page=1&amp;action=advanced&amp;output=checklist&amp;sort=cn ,cn+&amp;special=true&amp;set=+[&quot;Seventh Edition&quot;]">&nbsp;&gt;</a></div></div>
+            <b class="dd"><b></b></b>
+        </div>
+    </div>
+   
+
+
+
+            </div>
+            <div class="rightContainer">
+                
+            </div>
+        </div>
+    </div>
+    <div id="ctl00_ctl00_ctl00_backgroundBottom" class="backgroundBottom">
+        <img class="shadowImg" src="/images/Redesign/Shadow.png" />
+        
+        <div id="ctl00_ctl00_ctl00_footer" class="footer">
+            <div class="topBanner" id="TopBannerAdvertisement">
+                <style> #separator3 { top: 40px; } </style>
+                <a href="https://magic.wizards.com/en/events/event-types/friday-night-magic" target="_blank">
+                    <img src="//media.wizards.com/2018/images/magic/gatherer/footerbanner.jpg">
+                </a>            
+            </div>
+            <div class="footerLinks">
+            <a href="../TermsOfUse.aspx" id="ctl00_ctl00_ctl00_A5">Terms of Use</a>&nbsp;&nbsp;
+            <a href="../PrivacyPolicy.aspx" id="ctl00_ctl00_ctl00_A6">Privacy Policy</a>&nbsp;&nbsp;
+            <a href="../CodeOfConduct.aspx" id="ctl00_ctl00_ctl00_A7">Code of Conduct</a>
+            <br>
+            <a href="http://www.magicthegathering.com" style="color: #ffffff;">Magicthegathering.com</a>&nbsp;&nbsp;
+            <a href="https://magic.wizards.com/en/content/magic-online-products-game-info" style="color: #ffffff;">
+                Magic: The Gathering Online</a>&nbsp;&nbsp; <a href="../Settings.aspx" id="ctl00_ctl00_ctl00_A1" style="color: #ffffff;">
+                    <span id="ctl00_ctl00_ctl00_Label1">Settings</span></a>&nbsp;&nbsp;
+            <a href="../Language.aspx" id="ctl00_ctl00_ctl00_A2" style="color: #ffffff;">
+                <span id="ctl00_ctl00_ctl00_Label2">Language</span></a>&nbsp;&nbsp;
+            <a href="https://company.wizards.com/policies/web/cookie" id="ctl00_ctl00_ctl00_A4" style="color: #ffffff;">
+                <span id="ctl00_ctl00_ctl00_Label4">Cookies</span></a>
+                &nbsp;&nbsp;
+            <a href="../Help.aspx" id="ctl00_ctl00_ctl00_A3" style="color: #ffffff;">
+                <span id="ctl00_ctl00_ctl00_Label3">Help</span></a>
+            
+            </div>
+            <div class="wizardsFooterSection">
+                &copy; 1995 -
+                2018
+                <a href="https://company.wizards.com" style="color: #898989;">Wizards of the Coast</a>
+                LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.
+            </div>
+            <div class="brandingContainer">
+                <img class="hasbrologo" src="/images/Redesign/hasbro_logo.png" />
+                <img class="wizardsfrontLogo" src="/images/Redesign/wizards_logo.png" />
+            </div>
+        </div>
+        <span class="smalldate"></span>
+    </div>
+    
+<script language="javascript" type="text/javascript">
+    var wotcAccountWidget = { init: function() { return false; } }; 
+    HandleReportPost = function(a, b) { 
+        window.location = "http://wizards.custhelp.com/cgi-bin/wizards.cfg/php/enduser/ask.php?p_prods=522,706,739&amp;p_cats=";
+            }</script></form>
+</body>
+</html>

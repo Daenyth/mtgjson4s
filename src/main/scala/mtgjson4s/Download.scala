@@ -80,7 +80,10 @@ object Download {
   def getTokenXml(client: Client[IO]): IO[String] =
     client.expect[String](TOKEN_URL)
 
-  def getCardDescription(client: Client[IO], muid: Muid): IO[Either[Throwable, CardDescription]] =
+  def getCardDescription(
+      client: Client[IO],
+      muid: Muid
+  ): IO[Either[Throwable, (CardDescription, Option[CardDescription])]] =
     (
       getCardOracleDetails(client, muid),
       getCardPrintedDetails(client, muid),
